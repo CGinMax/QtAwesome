@@ -18,12 +18,13 @@ QtAwesome.cpp
 QtAwesomeAnim.cpp
 )
 
-qt5_add_resources(QRC QtAwesome.qrc)
+qt5_add_resources(QRC QtAwesomeFree.qrc)
 
 add_library(${SUBDIR_NAME}
 STATIC
 ${HEADERS}
 ${SOURCES}
+${QRC}
 )
 
 target_link_libraries(${SUBDIR_NAME} PUBLIC
