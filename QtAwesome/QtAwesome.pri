@@ -27,4 +27,8 @@ CONFIG( fontAwesomeFree ){
     !build_pass:message(using font awesome free)
 }
 
-
+CONFIG(QTAWESOME_ENABLE_QML) {
+    QT += qml quick quickcontrols2
+    SOURCES += $$PWD/faiconprovider.cpp
+    HEADERS += $$PWD/faiconprovider.h
+}
